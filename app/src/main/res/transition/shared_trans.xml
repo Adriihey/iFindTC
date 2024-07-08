@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Existing transitions -->
+    <changeBounds/>
+    <changeImageTransform/>
+    <changeTransform/>
+
+    <!-- Additional transitions for NavigationView -->
+    <targets>
+        <target android:targetId="@id/navView"/>
+    </targets>
+    <changeClipBounds/>
+    <changeTransform/>
+</transitionSet>

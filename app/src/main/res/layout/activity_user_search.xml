@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserSearch"
+    android:id="@+id/drawerLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/purple700"/>
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/main_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            app:cardElevation="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/app_bar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                android:padding="13dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/searchView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:iconifiedByDefault="false"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:queryHint="Search tests"
+                        android:visibility="gone">
+
+                    </androidx.appcompat.widget.SearchView>
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="TAGS"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/searchView" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <CheckBox android:id="@+id/checkbox_AggregateCrushingValueTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Aggregate Crushing Value Test" />
+                        <CheckBox android:id="@+id/checkbox_AirContentTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Air Content Test" />
+                        <CheckBox android:id="@+id/checkbox_AsphaltDensityTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Asphalt Density Test" />
+                        <CheckBox android:id="@+id/checkbox_AtterbergLimitsTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Atterberg Limits Test" />
+                        <CheckBox android:id="@+id/checkbox_BendTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bend Test" />
+                        <CheckBox android:id="@+id/checkbox_BendingStrengthTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bending Strength Test" />
+                        <CheckBox android:id="@+id/checkbox_BitumenContentTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bitumen Content Test" />
+                        <CheckBox android:id="@+id/checkbox_CaliforniaBearingRatioCBRTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="California Bearing Ratio (CBR) Test" />
+                        <CheckBox android:id="@+id/checkbox_ChemicalCompositionTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chemical Composition Test" />
+                        <CheckBox android:id="@+id/checkbox_CompressionStrengthTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Compression Strength Test" />
+                        <CheckBox android:id="@+id/checkbox_CompressiveStrengthTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Compressive Strength Test" />
+                        <CheckBox android:id="@+id/checkbox_ConsolidationTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Consolidation Test" />
+                        <CheckBox android:id="@+id/checkbox_DimensionalToleranceTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dimensional Tolerance Test" />
+                        <CheckBox android:id="@+id/checkbox_DuctilityTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ductility Test" />
+                        <CheckBox android:id="@+id/checkbox_DurabilityTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Durability Test" />
+                        <CheckBox android:id="@+id/checkbox_EfflorescenceTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Efflorescence Test" />
+                        <CheckBox android:id="@+id/checkbox_FireResistanceTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fire Resistance Test" />
+                        <CheckBox android:id="@+id/checkbox_FlakinessAndElongationIndexTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Flakiness and Elongation Index Test" />
+                        <CheckBox android:id="@+id/checkbox_FlexuralStrengthTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Flexural Strength Test" />
+                        <CheckBox android:id="@+id/checkbox_HardnessTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hardness Test" />
+                        <CheckBox android:id="@+id/checkbox_ImpactTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Impact Test" />
+                        <CheckBox android:id="@+id/checkbox_MarshallStabilityTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Marshall Stability Test" />
+                        <CheckBox android:id="@+id/checkbox_MoistureContentTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Moisture Content Test" />
+                        <CheckBox android:id="@+id/checkbox_PenetrationTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Penetration Test" />
+                        <CheckBox android:id="@+id/checkbox_ProctorCompactionTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Proctor Compaction Test" />
+                        <CheckBox android:id="@+id/checkbox_RapidChloridePenetrationTestRCPT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rapid Chloride Penetration Test (RCPT)" />
+                        <CheckBox android:id="@+id/checkbox_ShearStrengthTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shear Strength Test" />
+                        <CheckBox android:id="@+id/checkbox_ShrinkageTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shrinkage Test" />
+                        <CheckBox android:id="@+id/checkbox_SieveAnalysisTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sieve Analysis Test" />
+                        <CheckBox android:id="@+id/checkbox_SlumpTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Slump Test" />
+                        <CheckBox android:id="@+id/checkbox_SoilClassificationTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Soil Classification Test" />
+                        <CheckBox android:id="@+id/checkbox_SoilPermeabilityTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Soil Permeability Test" />
+                        <CheckBox android:id="@+id/checkbox_SoundInsulationTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sound Insulation Test" />
+                        <CheckBox android:id="@+id/checkbox_SpecificGravityTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Specific Gravity Test" />
+                        <CheckBox android:id="@+id/checkbox_SplitTensileStrengthTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Split Tensile Strength Test" />
+                        <CheckBox android:id="@+id/checkbox_TensileStrengthTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tensile Strength Test" />
+                        <CheckBox android:id="@+id/checkbox_ThermalConductivityTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thermal Conductivity Test" />
+                        <CheckBox android:id="@+id/checkbox_TriaxialShearTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Triaxial Shear Test" />
+                        <CheckBox android:id="@+id/checkbox_ViscosityTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Viscosity Test" />
+                        <CheckBox android:id="@+id/checkbox_WaterAbsorptionTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Water Absorption Test" />
+                        <CheckBox android:id="@+id/checkbox_WaterPermeabilityTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Water Permeability Test" />
+
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            app:cardElevation="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView4"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="13dp">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="TESTING CENTERS"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/centerlist"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navView"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu1"
+        android:transitionName="nav_view"/>
+</androidx.drawerlayout.widget.DrawerLayout>

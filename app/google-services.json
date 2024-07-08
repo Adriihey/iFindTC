@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "95104555800",
+    "project_id": "testingcenter-828e2",
+    "storage_bucket": "testingcenter-828e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95104555800:android:7412611b2d32bd045d9c6d",
+        "android_client_info": {
+          "package_name": "com.appdazzle_innovations.testingcenter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfb6mvUisp2LdUGNcb0yxnWVkm9D7ZZbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

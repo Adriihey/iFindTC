@@ -1,0 +1,1605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewCenter"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/baseline_arrow_circle_left_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white"
+        android:elevation="1dp"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/centerpictureholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@color/black"
+        android:alpha="0.35"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="30dp"
+                android:layout_marginTop="380dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/centername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:gravity="center"
+                        android:text="CENTER NAME"
+                        android:textColor="@color/black"
+                        android:textSize="35sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        android:textStyle="italic"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="Where are we located?"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:layout_marginBottom="10dp"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/locationicon"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/centerlocation"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Address Here"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imageView4"
+                            app:layout_constraintTop_toTopOf="@+id/imageView4"
+                            android:layout_marginLeft="10dp"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="Center Email and Page"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:layout_marginBottom="10dp"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/tk_email_icon"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/centeremail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Email Here"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imageView5"
+                            app:layout_constraintTop_toTopOf="@+id/imageView5"
+                            android:layout_marginLeft="10dp"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/visitpage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginRight="20dp"
+                        android:backgroundTint="@color/purple700"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Visit Page"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="Tests and Services Offered"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:layout_marginTop="10dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/layoutAggregateCrushingValueTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Aggregate Crushing Value Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceAggregateCrushingValueTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layoutAirContentTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Air Content Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceAirContentTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layoutAsphaltDensityTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Asphalt Density Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceAsphaltDensityTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layoutAtterbergLimitsTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Atterberg Limits Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceAtterbergLimitsTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layoutBendTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Bend Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceBendTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutBendingStrengthTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Bending Strength Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceBendingStrengthTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutBitumenContentTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Bitumen Content Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceBitumenContentTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutCaliforniaBearingRatioCBRTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="California Bearing Ratio (CBR) Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceCaliforniaBearingRatioCBRTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutChemicalCompositionTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Chemical Composition Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceChemicalCompositionTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutCompressionStrengthTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Compression Strength Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceCompressionStrengthTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutCompressiveStrengthTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Compressive Strength Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceCompressiveStrengthTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutConsolidationTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Consolidation Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceConsolidationTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutDimensionalToleranceTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Dimensional Tolerance Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceDimensionalToleranceTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutDuctilityTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Ductility Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceDuctilityTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutDurabilityTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Durability Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceDurabilityTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutEfflorescenceTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Efflorescence Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceEfflorescenceTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutFireResistanceTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Fire Resistance Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceFireResistanceTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutFlakinessAndElongationIndexTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Flakiness and Elongation Index Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceFlakinessAndElongationIndexTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutFlexuralStrengthTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Flexural Strength Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceFlexuralStrengthTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutHardnessTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Hardness Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceHardnessTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutImpactTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Impact Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceImpactTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutMarshallStabilityTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Marshall Stability Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceMarshallStabilityTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutMoistureContentTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Moisture Content Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceMoistureContentTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutPenetrationTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Penetration Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/pricePenetrationTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layoutProctorCompactionTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Proctor Compaction Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceProctorCompactionTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutRapidChloridePenetrationTestRCPT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Rapid Chloride Penetration Test (RCPT)"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceRapidChloridePenetrationTestRCPT"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutShearStrengthTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Shear Strength Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceShearStrengthTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutShrinkageTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Shrinkage Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceShrinkageTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutSieveAnalysisTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Sieve Analysis Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceSieveAnalysisTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutSlumpTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Slump Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceSlumpTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutSoilClassificationTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Soil Classification Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceSoilClassificationTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutSoilPermeabilityTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Soil Permeability Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceSoilPermeabilityTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutSoundInsulationTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Sound Insulation Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceSoundInsulationTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutSpecificGravityTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Specific Gravity Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceSpecificGravityTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutSplitTensileStrengthTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Split Tensile Strength Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceSplitTensileStrengthTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutTensileStrengthTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Tensile Strength Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceTensileStrengthTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutThermalConductivityTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Thermal Conductivity Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceThermalConductivityTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutTriaxialShearTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Triaxial Shear Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceTriaxialShearTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutViscosityTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Viscosity Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceViscosityTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutWaterAbsorptionTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Water Absorption Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceWaterAbsorptionTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutWaterPermeabilityTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Water Permeability Test"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/priceWaterPermeabilityTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Select Tests"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:fontFamily="sans-serif-condensed-medium" />
+
+                    <ScrollView
+                        android:id="@+id/listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/checkbox_AggregateCrushingValueTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Aggregate Crushing Value Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_AirContentTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Air Content Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_AsphaltDensityTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Asphalt Density Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_AtterbergLimitsTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Atterberg Limits Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_BendTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bend Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_BendingStrengthTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bending Strength Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_BitumenContentTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bitumen Content Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_CaliforniaBearingRatioCBRTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="California Bearing Ratio (CBR) Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_ChemicalCompositionTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Chemical Composition Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_CompressionStrengthTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Compression Strength Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_CompressiveStrengthTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Compressive Strength Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_ConsolidationTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Consolidation Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_DimensionalToleranceTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dimensional Tolerance Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_DuctilityTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ductility Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_DurabilityTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Durability Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_EfflorescenceTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Efflorescence Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_FireResistanceTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Fire Resistance Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_FlakinessAndElongationIndexTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Flakiness and Elongation Index Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_FlexuralStrengthTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Flexural Strength Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_HardnessTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Hardness Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_ImpactTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Impact Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_MarshallStabilityTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Marshall Stability Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_MoistureContentTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Moisture Content Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_PenetrationTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Penetration Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_ProctorCompactionTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Proctor Compaction Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_RapidChloridePenetrationTestRCPT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rapid Chloride Penetration Test (RCPT)"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_ShearStrengthTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shear Strength Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_ShrinkageTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shrinkage Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_SieveAnalysisTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sieve Analysis Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_SlumpTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Slump Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_SoilClassificationTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Soil Classification Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_SoilPermeabilityTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Soil Permeability Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_SoundInsulationTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sound Insulation Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_SpecificGravityTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Specific Gravity Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_SplitTensileStrengthTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Split Tensile Strength Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_TensileStrengthTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tensile Strength Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_ThermalConductivityTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Thermal Conductivity Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_TriaxialShearTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Triaxial Shear Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_ViscosityTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Viscosity Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_WaterAbsorptionTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Water Absorption Test"
+                                android:visibility="gone" />
+                            <CheckBox
+                                android:id="@+id/checkbox_WaterPermeabilityTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Water Permeability Test"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </ScrollView>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="EDIT CENTER"
+                        android:background="@color/purple700"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:textStyle="bold"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/sendrequest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SEND REQUEST"
+                        android:background="@color/purple700"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
